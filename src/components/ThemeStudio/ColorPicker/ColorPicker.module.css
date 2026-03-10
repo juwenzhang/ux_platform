@@ -1,0 +1,81 @@
+.picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 150ms;
+}
+
+.picker:hover {
+  background: rgba(69, 71, 90, 0.4);
+}
+
+.colorPreview {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  flex-shrink: 0;
+}
+
+.colorInput {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.colorInput::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorInput::-webkit-color-swatch {
+  border: 1px solid #45475a;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+}
+
+.label {
+  font-size: 12px;
+  color: #bac2de;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hexInput {
+  width: 100%;
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #a6adc8;
+  font-size: 11px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  outline: none;
+  transition: border-color 150ms, background 150ms;
+  box-sizing: border-box;
+}
+
+.hexInput:hover {
+  border-color: #45475a;
+  background: #1e1e2e;
+}
+
+.hexInput:focus {
+  border-color: #89b4fa;
+  background: #1e1e2e;
+}

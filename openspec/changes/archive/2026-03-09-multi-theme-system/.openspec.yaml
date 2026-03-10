@@ -1,0 +1,24 @@
+name: multi-theme-system
+description: 设计一个多套的主题系统，支持多主题切换和主题定制
+status: proposal
+artifacts:
+  - id: proposal
+    type: proposal
+    status: ready
+    path: proposal.md
+  - id: design
+    type: design
+    status: pending
+    path: design.md
+    dependencies:
+      - proposal
+  - id: tasks
+    type: tasks
+    status: pending
+    path: tasks.md
+    dependencies:
+      - design
+
+apply:
+  requires:
+    - tasks

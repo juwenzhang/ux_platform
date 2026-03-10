@@ -1,0 +1,46 @@
+.container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a6adc8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.code {
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+  padding: 10px;
+  background: #11111b;
+  border-radius: 8px;
+  border: 1px solid #313244;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #a6e3a1;
+  white-space: pre;
+  word-break: break-all;
+}
+
+.code::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.code::-webkit-scrollbar-thumb {
+  background: #45475a;
+  border-radius: 2px;
+}

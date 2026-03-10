@@ -1,0 +1,44 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 28px;
+  min-height: 28px;
+  flex-shrink: 0;
+  background: #11111b;
+  border-top: 1px solid #313244;
+  font-size: 11px;
+  color: #6c7086;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.item {
+  white-space: nowrap;
+}
+
+.item strong {
+  color: #cdd6f4;
+  font-weight: 500;
+}
+
+.separator {
+  color: #45475a;
+}
+
+.dirty {
+  color: #fab387;
+}
+
+.compareTag {
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(137, 180, 250, 0.15);
+  color: #89b4fa;
+}

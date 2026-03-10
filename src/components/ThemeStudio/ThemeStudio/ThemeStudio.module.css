@@ -1,0 +1,98 @@
+.studio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  /* 重置可能被全局样式污染的属性 */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+/* 重置 studio 内所有元素的 box-sizing */
+.studio *,
+.studio *::before,
+.studio *::after {
+  box-sizing: border-box;
+}
+
+/* 重置 studio 内所有 button 的全局样式污染 */
+.studio button {
+  all: unset;
+  cursor: pointer;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.leftPanel {
+  width: 280px;
+  min-width: 240px;
+  max-width: 280px;
+  overflow-y: auto;
+  border-right: 1px solid #313244;
+  background: #181825;
+  flex-shrink: 0;
+}
+
+.canvas {
+  flex: 1;
+  overflow: hidden;
+  background: #1e1e2e;
+  padding: 0;
+  min-width: 0;
+}
+
+.rightPanel {
+  width: 300px;
+  min-width: 260px;
+  max-width: 300px;
+  overflow-y: auto;
+  border-left: 1px solid #313244;
+  background: #181825;
+  flex-shrink: 0;
+}
+
+/* 滚动条美化 */
+.leftPanel::-webkit-scrollbar,
+.rightPanel::-webkit-scrollbar,
+.canvas::-webkit-scrollbar {
+  width: 6px;
+}
+
+.leftPanel::-webkit-scrollbar-track,
+.rightPanel::-webkit-scrollbar-track,
+.canvas::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.leftPanel::-webkit-scrollbar-thumb,
+.rightPanel::-webkit-scrollbar-thumb,
+.canvas::-webkit-scrollbar-thumb {
+  background: #45475a;
+  border-radius: 3px;
+}
+
+.leftPanel::-webkit-scrollbar-thumb:hover,
+.rightPanel::-webkit-scrollbar-thumb:hover,
+.canvas::-webkit-scrollbar-thumb:hover {
+  background: #585b70;
+}

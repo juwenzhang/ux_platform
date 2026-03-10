@@ -1,0 +1,24 @@
+name: theme-lowcode-platform
+description: 将主题系统升级为企业级低代码可视化配置平台，支持画布预览和 JSON 导出
+status: proposal
+artifacts:
+  - id: proposal
+    type: proposal
+    status: ready
+    path: proposal.md
+  - id: design
+    type: design
+    status: pending
+    path: design.md
+    dependencies:
+      - proposal
+  - id: tasks
+    type: tasks
+    status: pending
+    path: tasks.md
+    dependencies:
+      - design
+
+apply:
+  requires:
+    - tasks

@@ -1,0 +1,125 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 48px;
+  min-height: 48px;
+  background: #11111b;
+  border-bottom: 1px solid #313244;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: transparent;
+  color: #cdd6f4;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 150ms;
+  white-space: nowrap;
+}
+
+.backBtn:hover {
+  background: #313244;
+  border-color: #585b70;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #cdd6f4;
+  white-space: nowrap;
+}
+
+.themeSelect {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.themeSelect:focus {
+  border-color: #89b4fa;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #bac2de;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 150ms;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.actionBtn:hover {
+  background: #313244;
+  color: #cdd6f4;
+}
+
+.actionBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dangerBtn:hover:not(:disabled) {
+  background: rgba(243, 139, 168, 0.15);
+  color: #f38ba8;
+}
+
+.activeBtn {
+  background: rgba(137, 180, 250, 0.15);
+  color: #89b4fa;
+  border-color: rgba(137, 180, 250, 0.3);
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background: #45475a;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dirtyBadge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(250, 179, 135, 0.2);
+  color: #fab387;
+}

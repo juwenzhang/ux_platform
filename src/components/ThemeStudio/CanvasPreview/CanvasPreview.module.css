@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.canvasHeader {
+  padding: 10px 16px;
+  border-bottom: 1px solid #313244;
+  display: flex;
+  align-items: center;
+  background: #181825;
+  flex-shrink: 0;
+}
+
+.canvasTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #cdd6f4;
+}
+
+.canvasBody {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.compareMode {
+  display: flex;
+}
+
+.previewPane {
+  flex: 1;
+  border-radius: 12px;
+  padding: 24px;
+  overflow: auto;
+  border: 1px solid #313244;
+  position: relative;
+  min-width: 0;
+  transition: background-color 200ms, color 200ms;
+}
+
+.paneLabel {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
