@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/test_openspec/',
+  base: '/ux_platform/',
   plugins: [react()],
   build: {
     // 代码分割策略
